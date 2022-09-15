@@ -119,7 +119,7 @@ func DFS(i int, root *Node, word *string) bool {
 	cur := root
 	wLen := len(*word)
 	if wLen == i {
-		return true
+		return cur.EndOfWord
 	}
 	c := (*word)[i]
 	if c == '.' {
